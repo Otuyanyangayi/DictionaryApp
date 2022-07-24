@@ -13,7 +13,13 @@ function Search({setCategory, category, word, setWord}) {
         },
       });
   
-  
+  function handleChange1(e){
+    setWord(e.target.value)
+  }
+  function handleChange2(e){
+    setCategory(e.target.value)
+    
+  }
 
   return (
     // valid jsx
@@ -26,14 +32,14 @@ function Search({setCategory, category, word, setWord}) {
           id="standard-basic" 
           label="Search a Word"
           value={word}
-          onChange={(e) => setWord(e.target.value)}
+          onChange={handleChange1}
           helperText="Please enter your search word" />
           <TextField
            className="select"
             select
             label="Language"
             value={category}
-            onChange={(e) => setCategory(e.target.value)}
+            onChange={handleChange2}
             helperText="Please choose your category" >
             {categories.map((option) => (
               <MenuItem key={option.label} value={option.label}>{option.value}</MenuItem>
