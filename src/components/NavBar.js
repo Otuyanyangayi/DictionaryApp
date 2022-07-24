@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
                         <Link className="nav-link" to="/search">SEARCH</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/">CONTACTS</Link>
+                        <Link className="nav-link" to="/contacts">CONTACTS</Link>
                     </li>
                 </ul>
             </div>
