@@ -1,13 +1,13 @@
-import { TextField, createMuiTheme, ThemeProvider, MenuItem } from "@mui/material";
+import { TextField, createTheme, ThemeProvider, MenuItem } from "@mui/material";
 import React from "react";
 import "./Search.css";
-import category from "../../data/category";
+import categories from "../../data/category";
 
-function Search() {
-    const darkTheme = createMuiTheme({
+function Search({setCategory, category, word, setWord}) {
+    const darkTheme = createTheme({
         palette: {
           primary: {
-            main: "#fff",
+            main: "#000",
           },
           type: "dark",
         },
@@ -18,16 +18,24 @@ function Search() {
   return (
     // valid jsx
     <div className="header">
-      <span className="title">Search Me!</span>
+      <span className="title">{word ? word : "Search Me!"}</span>
       <div className="inputs">
         <ThemeProvider theme={darkTheme}>
-          <TextField id="standard-basic" label="Standard" />
+          <TextField 
+          className="search"
+          id="standard-basic" 
+          label="Search a Word"
+          value={word}
+          onChange={(e) => setWord(e.target.value)}
+          helperText="Please enter your search word" />
           <TextField
-            id="outlined-select-currency"
+           className="select"
             select
-            label="Select"
-            helperText="Please select your currency" >
-            {category.map((option) => (
+            label="Language"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            helperText="Please choose your category" >
+            {categories.map((option) => (
               <MenuItem key={option.label} value={option.label}>{option.value}</MenuItem>
             ))}
           </TextField>
