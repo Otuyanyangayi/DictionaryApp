@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from "./components/Home";
 import { Container } from "@material-ui/core";
 import { color } from "@mui/system";
-import Header from "./components/Header/Header";
+import Search from "./components/Search/Search";
+import Contacts from "./components/Contacts/Contacts";
 
 const DICTIONARY_API = "https://api.dictionaryapi.dev/api/v2/entries/en/good" 
 function App() {
@@ -30,23 +31,28 @@ function App() {
     fetchData, []
   )
   return (
-    <div style={{height : "100vh" , backgroundColor: "#6495ED", color: "black" }}>
+    <div style={{height : "100vh" , backgroundColor: "#6495ED" }}>
       
     <Container maxWidth="md" style={{display: "flex", flexDirection: "column", height : "100vh" }}>
       
     <Router>
      
       <Navbar/>
-      <Header />
+      
+      
       
       
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>
+        <Route exact path="/search" element={<Search/>}></Route>
+        <Route exact path="/contacts" element={<Contacts/>}></Route>
+        
         
       </Routes>
       
 
     </Router>
+
     </Container>
     </div>
    
