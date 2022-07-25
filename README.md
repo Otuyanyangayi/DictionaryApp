@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is currently under development.
 
 ### Project Screen Shot (UI)
-<img src="src/assets/ui.png">
+<img src="src/assets/ui.png" alt="ui" />
 
 
 ### Installation ansd Setup Instructions
@@ -46,6 +46,3 @@ Originally I wanted to build an application that allowed users to search for var
 
 ## Support and contact details
 Contact me via gracenyangayi@gmail.com
-### License
-* MIT license
-Copyright (c) {2022} **{Dictionary App}**
