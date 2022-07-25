@@ -28,19 +28,10 @@ function Search({setCategory, category, word, setWord}) {
       <div className="inputs">
         <ThemeProvider theme={darkTheme}>
           <TextField 
-          className="search"
-          id="standard-basic" 
-          label="Search a Word"
-          value={word}
-          onChange={handleChange1}
-          helperText="Please enter your search word" />
+          className="search" id="standard-basic" label="Search a Word" value={word} onChange={handleChange1}/>
           <TextField
-           className="select"
-            select
-            label="Language"
-            value={category}
-            onChange={handleChange2}
-            helperText="Please choose your category" >
+           className="select" select label="Language" value={category} onChange={handleChange2} >
+                
             {categories.map((option) => (
               <MenuItem key={option.label} value={option.label}>{option.value}</MenuItem>
             ))}
