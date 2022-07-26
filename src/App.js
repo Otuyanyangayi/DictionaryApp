@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import  Image  from "./Book.jpg";
+
 import Navbar from "./components/NavBar";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from "./components/Home";
 import { Container, withStyles,Switch } from "@material-ui/core";
 import Definitions from "./components/Definitions/Definitions";
@@ -43,7 +43,7 @@ function App() {
     })
   }
 
-  // console.log(meanings)
+    console.log(meanings)
 
   useEffect(
     fetchData, [word, category] // category
@@ -51,7 +51,7 @@ function App() {
   return (
     <div style={{height : "100vh" , backgroundColor: LightMode ? "#fff" : "#6495ED", color: LightMode ? "black" : "white" }}>
       
-    <Container maxWidth="md" style={{display: "flex", flexDirection: "column", height : "100vh", justifyContent: "space-evenly" }}>
+    <Container maxWidth="md" style={{display: "flex", flexDirection: "column", height : "100vh" }}>
       
     <Router>
      
@@ -69,7 +69,9 @@ function App() {
       
       
       <Routes>
-        <Route exact path="/home" element={<Home/>}></Route>
+         
+        <Route exact path="/" element={<Home/>}></Route>
+        <Route path="/" element={<Navigate to="/" />} />
         <Route exact path="/search" element={<><Search category={category} setCategory={setCategory}
         word={word} setWord={setWord}/>
         {/*definitions will only render if there is something inside of the meanings */}
