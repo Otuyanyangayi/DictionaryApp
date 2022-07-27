@@ -6,8 +6,8 @@ function Home() {
   return (
     <div className="home"
       style={{
-        backgroundImage: `url(${Background})`, backgroundRepeat:"no-repeat",backgroundSize:"contain", 
-        height:2000,width:912
+        backgroundImage: `url(${Background})`, backgroundRepeat:"no-repeat",backgroundSize:"cover", 
+        height:"auto",width:"100%"
       }}
     >
       <span className="span"> This is a simple reactjs Dictionary application that allows the user to search for 
