@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
             <div className="container-fluid">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/DictionaryApp/home/">HOME</Link>
+                        <Link className="nav-link" to="/DictionaryApp/home">HOME</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/DictionaryApp/search">SEARCH</Link>
