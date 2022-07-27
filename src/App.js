@@ -39,11 +39,14 @@ function App() {
     .then(res => res.json())
     .then(data => {
       console.log(data)
-      setMeanings(data)
+      if(data.title!=="No Definitions Found"){
+        setMeanings(data)
+      }
+      
     })
   }
 
-    console.log(meanings)
+    // console.log(meanings)
 
   useEffect(
     fetchData, [word, category] // category
@@ -70,16 +73,16 @@ function App() {
       
       <Routes>
          
-        <Route exact path="/" element={<Home/>}></Route>
-        <Route path="/" element={<Navigate to="/" />} />
-        <Route exact path="/search" element={<><Search category={category} setCategory={setCategory}
+        <Route exact path="/DictionaryApp/home" element={<Home/>}></Route>
+        <Route path="/DictionaryApp/home" element={<Navigate to="/DictionaryApp/home" />} />
+        <Route exact path="/DictionaryApp/search" element={<><Search category={category} setCategory={setCategory}
         word={word} setWord={setWord}/>
         {/*definitions will only render if there is something inside of the meanings */}
         {meanings && (<Definitions word={word} meanings={meanings} category={category}/> )} </>}> 
         
         </Route>
         
-        <Route exact path="/contacts" element={<Contacts/>}></Route>
+        <Route exact path="/DictionaryApp/contacts" element={<Contacts/>}></Route>
         
         
       </Routes>
