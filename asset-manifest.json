@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/DictionaryApp/static/css/main.d7eba84b.css",
-    "main.js": "/DictionaryApp/static/js/main.7b340555.js",
+    "main.css": "/DictionaryApp/static/css/main.ddaf7515.css",
+    "main.js": "/DictionaryApp/static/js/main.79c61d50.js",
     "static/js/787.b2458070.chunk.js": "/DictionaryApp/static/js/787.b2458070.chunk.js",
     "static/media/Best-Reviewed-Books.jpeg": "/DictionaryApp/static/media/Best-Reviewed-Books.d14077027c09297616ac.jpeg",
     "index.html": "/DictionaryApp/index.html",
-    "main.d7eba84b.css.map": "/DictionaryApp/static/css/main.d7eba84b.css.map",
-    "main.7b340555.js.map": "/DictionaryApp/static/js/main.7b340555.js.map",
+    "main.ddaf7515.css.map": "/DictionaryApp/static/css/main.ddaf7515.css.map",
+    "main.79c61d50.js.map": "/DictionaryApp/static/js/main.79c61d50.js.map",
     "787.b2458070.chunk.js.map": "/DictionaryApp/static/js/787.b2458070.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7eba84b.css",
-    "static/js/main.7b340555.js"
+    "static/css/main.ddaf7515.css",
+    "static/js/main.79c61d50.js"
   ]
 }
