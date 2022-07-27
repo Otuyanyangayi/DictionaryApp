@@ -34,12 +34,12 @@ function Definitions({ word, category, meanings }) {
                 )}
                 {def.synonyms && (
                   <span>
-                    <b>Synonyms :</b> {def.synonyms.map((s) => `${s}, `)}
+                    <b>Synonyms :  </b> {def.synonyms.map((s) => `${s}, `)}
                   </span>
                 )}
                 {def.antonyms && (
                   <span>
-                    <b>Antonyms :</b> {def.antonyms.map((a) => `${a}, `)}
+                    <b>Antonyms : </b> {def.antonyms.map((a) => `${a}, `)}
                   </span>
                 )}
               </div>
