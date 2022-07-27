@@ -2,11 +2,12 @@ import React from "react";
 import "./Definitions.css";
 
 function Definitions({ word, category, meanings }) {
+  
   return (
     <div className="meanings">
       {meanings[0] && word &&  (
         <audio
-          style={{ backgroundColor: "#fff", borderRadius: 10 }}
+          style={{ backgroundColor: "#fff", borderRadius: 10,height:"40px" }}
           src={meanings[0].phonetics[0] && meanings[0].phonetics[0].audio}
           controls
         >
