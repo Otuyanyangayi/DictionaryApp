@@ -43,7 +43,9 @@ function App() {
         setMeanings(data)
       }
       
-    })
+    } ) 
+   
+   
   }
 
     // console.log(meanings)
@@ -73,8 +75,8 @@ function App() {
       
       <Routes>
          
-        <Route exact path="/DictionaryApp/home" element={<Home/>}></Route>
-        <Route path="/DictionaryApp/home" element={<Navigate to="/DictionaryApp/home" />} />
+        <Route exact path="/DictionaryApp" element={<Home/>}></Route>
+        <Route path="/DictionaryApp" element={<Navigate to="/DictionaryApp" />} />
         <Route exact path="/DictionaryApp/search" element={<><Search category={category} setCategory={setCategory}
         word={word} setWord={setWord}/>
         {/*definitions will only render if there is something inside of the meanings */}
