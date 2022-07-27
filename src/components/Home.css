@@ -1,27 +1,26 @@
 .home{
-  display: flex;
-  align-items: center;
+    align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   height: 35vh;
-  width: 100%;
-  padding-bottom: 21%;
   margin-top: 10%;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 .span{
   
-  font-size: 2vw;
+  font-size: 2em;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   background-color: black;
 
   
 }
-@media( max-width:900px){
+@media( max-width:500px){
   .home{ 
   justify-content: space-evenly;
   height: 25vh;}
   .span{
-      font-size: 11vw;
+      
   }
 }
