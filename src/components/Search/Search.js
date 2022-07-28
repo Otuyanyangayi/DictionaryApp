@@ -4,13 +4,13 @@ import "./Search.css";
 import categories from "../../data/category";
 
 
-function Search({setCategory, category, word, setWord}) {
+function Search({setCategory, category, word, setWord, LightMode}) {
     const darkTheme = createTheme({
         palette: {
           primary: {
-            main: "#000",
+            main: LightMode ?"#000" : "#fff",
           },
-          type: "dark",
+          type: LightMode ? "#light" :  "dark",
         },
       });
   
@@ -51,9 +51,10 @@ function Search({setCategory, category, word, setWord}) {
       <span className="title">{word ? word : "Search Me!"}</span>
       <div className="inputs">
         <ThemeProvider theme={darkTheme}>
-          <TextField 
+          <TextField  
           className="search" id="standard-basic" label="Search a Word" value={word} onChange={handleChange1}/>
           <TextField
+          
            className="select" select label="Language" value={category} onChange={handleChange2} >
                 
             {categories.map((option) => (
