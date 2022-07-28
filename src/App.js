@@ -10,7 +10,7 @@ import Contacts from "./components/Contacts/Contacts";
 import { grey } from "@material-ui/core/colors";
 import Bookmarks from "./components/Bookmarks/Bookmarks";
 import Background from "./assets/bg5.jpg"
-import background from "./assets/bg7.jpeg.crdownload"
+import background from "./assets/diyanet_raporu_1-284ab72b.jpeg"
 
 
 
@@ -21,7 +21,7 @@ function App() {
   
   const [meanings, setMeanings ] = useState([])
   const [category, setCategory] = useState("en")
-  const [LightMode, setLightMode] = useState(false)
+  const [LightMode, setLightMode] = useState(true)
   
   
 
