@@ -8,6 +8,7 @@ This project is currently under development.
 
 ### Project Screen Shot (UI)
 <img src="src/assets/yellowui.png" alt="ui" />
+<img src="src/assets/greyui.png" alt="ui" />
 
 
 ### Installation ansd Setup Instructions
