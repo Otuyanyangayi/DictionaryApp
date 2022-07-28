@@ -59,7 +59,7 @@ function App() {
   )
   return (
     <div className="html" style={{ backgroundImage: `url(${Background})`,backgroundRepeat:"no-repeat"
-    ,backgroundSize: "cover",height : "100vh" , backgroundColor: LightMode ? "#fff" : "#6495ED", color: LightMode ? "black" : "white" }}>
+    ,backgroundSize: "cover",height : "100vh" ,  color: LightMode ? "black" : "white" }}>
       
     <Container maxWidth="md" style={{display: "flex", flexDirection: "column", height : "100vh" }} >
       
@@ -80,9 +80,9 @@ function App() {
       
       <Routes>
          
-        <Route exact path="/DictionaryApp" element={<Home/>}></Route>
-        <Route path="/DictionaryApp" element={<Navigate to="/DictionaryApp" />} />
-        <Route exact path="/DictionaryApp/search" element={<><Search category={category} setCategory={setCategory}
+        <Route exact path="/" element={<Home/>}></Route>
+        <Route path="/" element={<Navigate to="/" />} />
+        <Route exact path="/search" element={<><Search category={category} setCategory={setCategory}
         word={word} setWord={setWord}/>
         {/*definitions will only render if there is something inside of the meanings */}
         {meanings && (<Definitions word={word} meanings={meanings} category={category} 
@@ -90,8 +90,8 @@ function App() {
         
         </Route>
         
-        <Route exact path ="/DictionaryApp/bookmarks" element={<Bookmarks  />}></Route>
-        <Route exact path="/DictionaryApp/contacts" element={<Contacts/>}></Route>
+        <Route exact path ="/bookmarks" element={<Bookmarks  />}></Route>
+        <Route exact path="/contacts" element={<Contacts/>}></Route>
         
         
       </Routes>
