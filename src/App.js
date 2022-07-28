@@ -10,6 +10,8 @@ import Contacts from "./components/Contacts/Contacts";
 import { grey } from "@material-ui/core/colors";
 import Bookmarks from "./components/Bookmarks/Bookmarks";
 import Background from "./assets/bg5.jpg"
+import background from "./assets/bg7.jpeg.crdownload"
+
 
 
 
@@ -58,7 +60,7 @@ function App() {
     fetchData, [word, category] // category
   )
   return (
-    <div className="html" style={{ backgroundImage: `url(${Background})`,backgroundRepeat:"no-repeat"
+    <div className="html" style={{ backgroundImage: LightMode ? `url(${Background})`: `url(${background})`,backgroundRepeat:"no-repeat"
     ,backgroundSize: "cover",height : "100vh" ,  color: LightMode ? "black" : "white" }}>
       
     <Container maxWidth="md" style={{display: "flex", flexDirection: "column", height : "100vh" }} >
@@ -83,9 +85,9 @@ function App() {
         <Route exact path="/" element={<Home/>}></Route>
         <Route path="/" element={<Navigate to="/" />} />
         <Route exact path="/search" element={<><Search category={category} setCategory={setCategory}
-        word={word} setWord={setWord}/>
+        word={word} setWord={setWord} LightMode={LightMode}/>
         {/*definitions will only render if there is something inside of the meanings */}
-        {meanings && (<Definitions word={word} meanings={meanings} category={category} 
+        {meanings && (<Definitions word={word} meanings={meanings}  LightMode={LightMode} category={category} 
         /> )} </>}> 
         
         </Route>
