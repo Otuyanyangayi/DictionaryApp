@@ -13,6 +13,9 @@ import { Link } from "react-router-dom";
                         <Link className="nav-link" to="/DictionaryApp/search">SEARCH</Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="nav-link" to="/DictionaryApp/bookmarks">BOOKMARKS</Link>
+                    </li>
+                    <li className="nav-item">
                         <Link className="nav-link" to="/DictionaryApp/contacts">CONTACTS</Link>
                     </li>
                 </ul>
