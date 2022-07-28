@@ -1,5 +1,6 @@
 
 import React, {  useEffect, useState } from "react";
+import "./Bookmarks.css"
 
 
 // deletes the bookmarks from the array.
@@ -28,7 +29,7 @@ function getBookmarks() {
         getBookmarks, []
     )
     return(
-        <div>
+        <div className="bookmarks">
             <h3>Bookmarks</h3>
             <a href="/DictionaryApp/search">Add Bookmark</a>
            <table className="table table-striped" border="1" cellspacing="0" cellpadding="0">
