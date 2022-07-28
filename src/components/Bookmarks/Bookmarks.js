@@ -31,7 +31,7 @@ function getBookmarks() {
     return(
         <div className="bookmarks">
             <h3>Bookmarks</h3>
-            <a href="/#/search">Add Bookmark</a>
+            <a href="DictionaryApp/#/search">Add Bookmark</a>
            <table className="table table-striped" border="1" cellspacing="0" cellpadding="0">
             <thead>
                 <tr>
