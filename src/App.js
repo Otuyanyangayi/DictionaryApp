@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Navbar from "./components/NavBar";
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from "./components/Home";
 import { Container, withStyles,Switch } from "@material-ui/core";
 import Definitions from "./components/Definitions/Definitions";
