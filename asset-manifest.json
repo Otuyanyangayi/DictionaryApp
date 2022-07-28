@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/DictionaryApp/static/css/main.26e8cd1b.css",
-    "main.js": "/DictionaryApp/static/js/main.d7b80016.js",
+    "main.css": "/DictionaryApp/static/css/main.e3a4780c.css",
+    "main.js": "/DictionaryApp/static/js/main.eea034f4.js",
     "static/js/787.b2458070.chunk.js": "/DictionaryApp/static/js/787.b2458070.chunk.js",
-    "static/media/Best-Reviewed-Books.jpeg": "/DictionaryApp/static/media/Best-Reviewed-Books.d14077027c09297616ac.jpeg",
+    "static/media/bg5.jpg": "/DictionaryApp/static/media/bg5.a2b9a93e716e3463b5a6.jpg",
     "index.html": "/DictionaryApp/index.html",
-    "main.26e8cd1b.css.map": "/DictionaryApp/static/css/main.26e8cd1b.css.map",
-    "main.d7b80016.js.map": "/DictionaryApp/static/js/main.d7b80016.js.map",
+    "main.e3a4780c.css.map": "/DictionaryApp/static/css/main.e3a4780c.css.map",
+    "main.eea034f4.js.map": "/DictionaryApp/static/js/main.eea034f4.js.map",
     "787.b2458070.chunk.js.map": "/DictionaryApp/static/js/787.b2458070.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26e8cd1b.css",
-    "static/js/main.d7b80016.js"
+    "static/css/main.e3a4780c.css",
+    "static/js/main.eea034f4.js"
   ]
 }
