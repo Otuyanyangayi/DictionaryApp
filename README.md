@@ -26,7 +26,7 @@ To Start Server:
 
 `npm start`  
 
-To Visit App:
+To Visit App: https://otuyanyangayi.github.io/DictionaryApp/
 
 ## Known Bugs
 There are no known bugs as of now.
@@ -37,6 +37,8 @@ There are no known bugs as of now.
 * Reactjs Library- to create the app
 * Materialui
 * Bootstrap
+* API link - https://api.dictionaryapi.dev/api/v2/entries/en/hello
+* Website - https://dictionaryapi.dev/
 
 
 ### Reflection 
