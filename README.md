@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is currently under development.
 
 ### Project Screen Shot (UI)
-<img src="src/assets/newui.png" alt="ui" />
+<img src="src/assets/yellowui.png" alt="ui" />
 
 
 ### Installation ansd Setup Instructions
