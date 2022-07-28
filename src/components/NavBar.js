@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
             <div className="container-fluid">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/DictionaryApp">HOME</Link>
+                        <Link className="nav-link" to="/">HOME</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/DictionaryApp/search">SEARCH</Link>
+                        <Link className="nav-link" to="/search">SEARCH</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/DictionaryApp/bookmarks">BOOKMARKS</Link>
+                        <Link className="nav-link" to="/bookmarks">BOOKMARKS</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/DictionaryApp/contacts">CONTACTS</Link>
+                        <Link className="nav-link" to="/contacts">CONTACTS</Link>
                     </li>
                 </ul>
             </div>
