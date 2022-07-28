@@ -8,6 +8,8 @@ import Definitions from "./components/Definitions/Definitions";
 import Search from "./components/Search/Search";
 import Contacts from "./components/Contacts/Contacts";
 import { grey } from "@material-ui/core/colors";
+import Bookmarks from "./components/Bookmarks/Bookmarks";
+import Background from "./assets/bg5.jpg"
 
 
 
@@ -18,6 +20,8 @@ function App() {
   const [meanings, setMeanings ] = useState([])
   const [category, setCategory] = useState("en")
   const [LightMode, setLightMode] = useState(false)
+  
+  
 
   const DarkMode = withStyles({
     switchBase: {
@@ -54,9 +58,10 @@ function App() {
     fetchData, [word, category] // category
   )
   return (
-    <div style={{height : "100vh" , backgroundColor: LightMode ? "#fff" : "#6495ED", color: LightMode ? "black" : "white" }}>
+    <div className="html" style={{ backgroundImage: `url(${Background})`,backgroundRepeat:"no-repeat"
+    ,backgroundSize: "cover",height : "100vh" , backgroundColor: LightMode ? "#fff" : "#6495ED", color: LightMode ? "black" : "white" }}>
       
-    <Container maxWidth="md" style={{display: "flex", flexDirection: "column", height : "100vh" }}>
+    <Container maxWidth="md" style={{display: "flex", flexDirection: "column", height : "100vh" }} >
       
     <Router>
      
@@ -80,10 +85,12 @@ function App() {
         <Route exact path="/DictionaryApp/search" element={<><Search category={category} setCategory={setCategory}
         word={word} setWord={setWord}/>
         {/*definitions will only render if there is something inside of the meanings */}
-        {meanings && (<Definitions word={word} meanings={meanings} category={category}/> )} </>}> 
+        {meanings && (<Definitions word={word} meanings={meanings} category={category} 
+        /> )} </>}> 
         
         </Route>
         
+        <Route exact path ="/DictionaryApp/bookmarks" element={<Bookmarks  />}></Route>
         <Route exact path="/DictionaryApp/contacts" element={<Contacts/>}></Route>
         
         
