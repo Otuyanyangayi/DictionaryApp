@@ -15,9 +15,8 @@ function Contacts() {
       <h3>Contacts</h3>
       <hr style={{ width: "90%", marginTop: 20 }} />
       <p className="p">
-        Email me at <a href="gracenyangayi@gmail.com">gracenyangayi@gmail</a> or
-        find me on my socials!
-      </p>
+      Email me at <a href="mailto:gracenyangayi@gmail.com">gracenyangayi@gmail.com</a> or find me on my socials!
+        </p>
       <a href="https://github.com/Otuyanyangayi" className="github social">
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
