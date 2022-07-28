@@ -13,6 +13,7 @@ function Contacts() {
   return (
     <div className="contacts">
       <h3>Contacts</h3>
+      <hr style={{ width: "90%", marginTop: 20 }} />
       <p className="p">
         Email me at <a href="gracenyangayi@gmail.com">gracenyangayi@gmail</a> or
         find me on my socials!
