@@ -8,12 +8,12 @@
     height: 35vh;
     width: 97%;
     margin: 3%;
-    padding: 25px 0 50px;
+    padding: 25px 0 25px ;
   }
   .p{
     text-align: center;
     text-transform: none;
-    padding: 0px 0 50px;
+    padding: 0px 0 25px;
     
   }
   a {
