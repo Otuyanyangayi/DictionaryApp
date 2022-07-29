@@ -16,7 +16,7 @@ This project is currently under development.
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
 Installation:
-```
+``` bash
 # Install dependencies
 
 npm install 
