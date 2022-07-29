@@ -16,16 +16,15 @@ This project is currently under development.
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
 Installation:
+```
+# Install dependencies
 
-`npm install`  
+npm install 
 
-To Run Test Suite:  
+# To Start Server:
 
-`npm test`  
-
-To Start Server:
-
-`npm start`  
+npm start 
+``` 
 
 To Visit App: https://otuyanyangayi.github.io/DictionaryApp/
 
